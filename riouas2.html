@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOOKISM</title>
+    <link rel="stylesheet" type="text/css" href="riostyle.css">
+</head>
+<body>
+<div id="container">
+    <div id="header"></div>
+    <div id="navigasi">
+        <nav>
+            <a href="riouas1.html">HOME</a>
+            <a href="riouas2.html">ORGANIZATION</a>
+            <a href="riouas3.html">GALLERY</a>
+            <a href="riouas4.html">CONTACT US</a>
+            <a href="riouas5.html">ABOUT US</a>
+        </nav>
+    </div>
+    <div id="content">
+        <h1>4MEN CREW</h1>
+        <hr>
+        <div>
+            <script>
+              function formatJam(jam) {
+                  return (jam < 10 ? '0' : '') + jam;
+              }
+
+              function formatMenit(menit) {
+                  return (menit < 10 ? '0' : '') + menit;
+              }
+
+              function formatDetik(detik) {
+                  return (detik < 10 ? '0' : '') + detik;
+              }
+
+              function formatTanggal(tanggal) {
+                  return (tanggal < 10 ? '0' : '') + tanggal;
+              }
+
+              function formatBulan(bulan) {
+                  const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                  return namaBulan[bulan - 1];
+              }
+
+              function formatTahun(tahun) {
+                  return tahun.toString().padStart(4, '0');
+              }
+
+              function tampilkanWaktu() {
+                  const waktuSekarang = new Date();
+                  const jam = waktuSekarang.getHours();
+                  const menit = waktuSekarang.getMinutes();
+                  const detik = waktuSekarang.getSeconds();
+                  const tanggal = waktuSekarang.getDate();
+                  const bulan = waktuSekarang.getMonth() + 1;
+                  const tahun = waktuSekarang.getFullYear();
+
+                  document.getElementById('jam').innerHTML = formatJam(jam) + ':' + formatMenit(menit) + ':' + formatDetik(detik);
+                  document.getElementById('tanggal').innerHTML = formatTanggal(tanggal) + ' ' + formatBulan(bulan) + ' ' + formatTahun(tahun);
+              }
+
+              setInterval(tampilkanWaktu, 1000);
+          </script>
+          <p id="jam"></p>
+          <p id="tanggal"></p>
+          </div>
+          <div style="text-align:center">
+          <hr>
+        </div>
+        <img src="4MEN.jpg" class="organisasi">
+        <p>4 Men Crew adalah empat gengster terbesar di manhwa Lookism. Kelompok ini diperkenalkan pada pertengahan cerita dan sekarang menjadi poros utama dalam kelanjutan cerita manhwa karya Park Tae-Joon ini. Kelompok ini berasal dari kota Seoul yang masing-masing wilayahnya terbagi dari Sungai Han pada empat wilayah yakni Utara, Selatan, Timur dan Barat.</p>
+        <p>Keempat kelompok ini dibentuk oleh salah dua karakter terkuat di Lookism yakni Jon-gun dan Joon-goo. Tujuan dibentuknya keempat kru ini adalah mempekerjakan anak-anak dibawah umur untuk menghasilkan uang dengan berbagai cara.</p>
+        <p>Awalnya kelompok ini dibentuk untuk menjadi penerus dari Jon-gun dan Joon-goo. Kedua orang tersebut kemudian mencari kandidat-kandidat yang cocok yang bertebaran di kota Seoul. Setelah menemukan semua kandidat dan membentuk semua kelompok, kedua orang ini memberi tugas agar setiap kru membayar uang senilai ratusan ribu won dengan cara ilegal. Dari tanggung jawab inilah, terjadi keretakan dalam metode para geng ini.</p>
+        <h3>God Dog</h3>
+        <img src="god1.jpg" class="yohan">
+        <p>Pada posisi pertama ada organisasi God Dog yang berkuasa di Gangbuk, utara kota Seoul. Awalnya, kru ini bernama K-House yang diketuai oleh Jin Jang. Sayang, organisasi tersebut harus hancur setelah datangnya penantang baru yakni Yohan Seong. Yohan berhasil mengalahkan Jin-Jang yang memaksanya untuk menjadi tangan kanan sang pendatang baru.</b></p>
+        <p>Setelah mengalahkan Jin Jang, Yohan kemudian mengubah nama K-House menjadi God Dog dan bergabung menjadi anggota dari 4 Men Crew di manhwa Lookism. Selama menggunakan nama K-House, para anggota kelompok ini menghasilkan uang dari bisnis rekening bank palsu dan penipuan. Seong Yohan kemudian menghentikan hal tersebut meski pada akhirnya para anggotanya masih melakukan hal tersebut. Seong Yohan mengendalikan God Dog dengan kekuatan intimidasi yang membuatnya dikhianati dan ditinggalkan oleh semua anggotanya. Ia kemudian menjadi satu-satunya anggota dari kelompok God Dog.</p>
+        <h3>Ilhae</h3>
+        <img src="ilha1.jpeg" class="yojin">
+        <p>Selanjutnya ada Ilhae. Dibanding dengan 4 Men Crew yang lain di manhwa Lookism, Ilhae merupakan organisasi yang bergerak begitu rapi dan memiliki sistem perusahaan. Ilhae sendiri merupakan kelompok yang sulit untuk ditemukan karena mereka berpakaian seperti para pekerja profesional. Kelompok ini dipimpin oleh Yoojin yang membawahi anak perusahaan yang memiliki bisnisnya masing-masing. Sampai sekarang, baru ada 5 anak perusahaan Ilhae di Lookism yang diketahui yakni:</b></p>
+        <p>Bisnis pinjaman ilegal dan pemerasan oleh anak perusahaan kelima yang dipimpin oleh Janghyun, Bisnis live streaming Ilegal oleh anak perusahaan keempat yang diketuai Hwang Jaewon, Penjualan narkoba dan klub malam oleh anak perusahaan ketiga yang diketuai Vivi, Bisnis pertarungan dan perjudian oleh anak perusahaan kedua yang dipimpin Mitsuki (Neko), Bisnis operasi plastik dan kecantikan oleh anak perusahaan pertama yang dipimpin Hangyeoul Baek.</p>
+        <h3>HOSTEL</h3>
+        <img src="hoste1.webp" class="elijang">
+        <p>Kemudian ada kru Hostel yang menjadi penguasa Gangdong, bagian timur kota Seoul. Mulanya, kru ini bernama Back-Door, sebuah geng yang dipimpin oleh Hong Du-Pyo. Setelah Janghyun datang dan mengalahkan pemimpin Back-Door, ia mengubah namanya menjadi Hostel.</p>
+        <p>Diantara semua kru, Hostel dikenal sebagai kru paling buruk dan sadis. Janghyun yang merupakan pemimpin dari Hostel sendiri bahkan dianggap sebagai calon suksesor Jong-gun paling kuat karena kemampuan bertarung dan kepemimpinannya. Hostel sendiri adalah kru yang menampung anak-anak yang kabur dari rumah. Karena itu, anggota kru satu ini punya ikatan yang sangat kuat layaknya keluarga.Secara resmi, Hostel kini dibawah kendali organisasi terkejam di Lookism, Ilhae. Bahkan Janghyun diberi tanggung jawab untuk memimpik anak perusahaan ke-5 Ilhae yang bergeran di bidang pinjaman ilegal. Janghyun beroperasi di luar Seoul namun masih sering datang untuk membantu Ilhae.</p>
+        <h3>Big Deal</h3>
+        <img src="BIG1.webp" class="gimyung">
+        <p>Daftar terakhir dari 4 Men Crew di Manhwa Lookism adalah organisasi Big Deal yang menguasai wilayah Gangseo, bagian barat kota Seoul. Big Deal merupakan kru yang dipimpin oleh Kim Gimyung. Sebelum Gimyung, kelompok ini memang terkenal sangat kuat dan dipimpin oleh Han Sinwoo. Berbeda dengan kelompok lain, Big Deal sendiri terkenal karena romantisme sejarahnya. Setiap anggotanya memiliki kebanggan sebagai bagian dari Big Deal.Salah satu bisnis terkenal yang dikelola Big Deal adalah operasi perjudian ilegal di pusat Seoul. Bisnis judi ilegal ini kemudian menyeret banyak korban. Kebanyakan korban datang dari anak-anak SMA. Selain itu, Big Deal juga sempat bentrok dengan kelompok lain seperti Hostel, Ilhae bahkan dengan SMA Jaewon. Akibat aktivitas ilegalnya tersebut, Jong-gun mendiskualifikasi Kim Gimyung untuk menjadi penerusnya. Ia kemudian dipenjara di penjara remaja beserta banyak anggota Big Deal lainnya. Hal ini kemudian membuat banyak anggota Big Deal yang berada di luar penjara kebingungan dan pergi mencari naungan sebagai anggota Ilhae.</p>
+        <P>Pada masa Han Sinwoo, Big Deal adalah pelindung bagi para pedagang di daerah Gangseo. Namun setelah Gimyung menjadi pemimpin, ia terpaksa harus menjalankan bisnis judi toto ilegal dan penipuan. Karena hal ini, Gimyung dan banyak anggota Big Deal lain sempat masuk penjara remaja dan menguasai tempat penahanan tersebut.</b></p>
+    </div>
+    <div id="footer">
+        <p> &copy; Copyright 2023 - Novario Suryaputra (231011700974) </p>
+    </div>
+</div>
+</body>
+</html>

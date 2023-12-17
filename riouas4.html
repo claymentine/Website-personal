@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOOKISM</title>
+    <link rel="stylesheet" type="text/css" href="riostyle.css" >
+</head>
+<body>
+<div id="container">
+    <div id="header"></div>
+    <div id="navigasi">
+        <nav>
+            <a href="riouas1.html">HOME</a>
+            <a href="riouas2.html">ORGANIZATION</a>
+            <a href="riouas3.html">GALLERY</a>
+            <a href="riouas4.html">CONTACT US</a>
+            <a href="riouas5.html">ABOUT US</a>
+        </nav>
+    </div>
+            <div id="content">
+            <div style="text-align:center">
+              <h1>Contact Us</h1>
+              <hr>
+            </div>
+            <div>
+              <script>
+                function formatJam(jam) {
+                    return (jam < 10 ? '0' : '') + jam;
+                }
+  
+                function formatMenit(menit) {
+                    return (menit < 10 ? '0' : '') + menit;
+                }
+  
+                function formatDetik(detik) {
+                    return (detik < 10 ? '0' : '') + detik;
+                }
+  
+                function formatTanggal(tanggal) {
+                    return (tanggal < 10 ? '0' : '') + tanggal;
+                }
+  
+                function formatBulan(bulan) {
+                    const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                    return namaBulan[bulan - 1];
+                }
+  
+                function formatTahun(tahun) {
+                    return tahun.toString().padStart(4, '0');
+                }
+  
+                function tampilkanWaktu() {
+                    const waktuSekarang = new Date();
+                    const jam = waktuSekarang.getHours();
+                    const menit = waktuSekarang.getMinutes();
+                    const detik = waktuSekarang.getSeconds();
+                    const tanggal = waktuSekarang.getDate();
+                    const bulan = waktuSekarang.getMonth() + 1;
+                    const tahun = waktuSekarang.getFullYear();
+  
+                    document.getElementById('jam').innerHTML = formatJam(jam) + ':' + formatMenit(menit) + ':' + formatDetik(detik);
+                    document.getElementById('tanggal').innerHTML = formatTanggal(tanggal) + ' ' + formatBulan(bulan) + ' ' + formatTahun(tahun);
+                }
+  
+                setInterval(tampilkanWaktu, 1000);
+            </script>
+            <p id="jam"></p>
+            <p id="tanggal"></p>
+            </div>
+            <div style="text-align:center">
+            <hr>
+          </div>
+            <div class="row">
+              <div class="column">
+                <img src="yojin.jpg" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  Name
+                  <input type="text" id="fname" name="firstname" placeholder="Input Your Name">     
+                  Your ID
+                  <textarea name="Alamat" placeholder="Input Your ID"></textarea>
+                  Organization
+                  <select id="country" name="Organization">
+                    <option value="God Dog">God Dog</option>
+                    <option value="Ilhae">Ilhae</option>
+                    <option value="HOSTEL">HOSTEL</option>
+                    <option value="Big Deal">Big Deal</option>
+                  </select>
+                  Reason to Join
+                  <textarea id="subject" name="subject" placeholder="Give Your Reason" style="height:110px"></textarea>
+                  <input type="submit" value="SEND">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div id="footer">
+        <p> &copy; Copyright 2023 - Novario Suryaputra (231011700974) </p>
+    </div>
+</div>
+</body>
+</html>

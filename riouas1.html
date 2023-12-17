@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOOKISM</title>
+    <link rel="stylesheet" type="text/css" href="riostyle.css">
+</head>
+<body>
+<div id="container">
+    <div id="header"></div>
+    <div id="navigasi">
+        <nav>
+            <a href="riouas1.html">HOME</a>
+            <a href="riouas2.html">ORGANIZATION</a>
+            <a href="riouas3.html">GALLERY</a>
+            <a href="riouas4.html">CONTACT US</a>
+            <a href="riouas5.html">ABOUT US</a>
+        </nav>
+    </div>
+    <div id="content">
+        <h1>--------------   --------------------   L O O K I S M   --------------------   -------------</h1>
+        <hr>
+        <div>
+            <script>
+              function formatJam(jam) {
+                  return (jam < 10 ? '0' : '') + jam;
+              }
+
+              function formatMenit(menit) {
+                  return (menit < 10 ? '0' : '') + menit;
+              }
+
+              function formatDetik(detik) {
+                  return (detik < 10 ? '0' : '') + detik;
+              }
+
+              function formatTanggal(tanggal) {
+                  return (tanggal < 10 ? '0' : '') + tanggal;
+              }
+
+              function formatBulan(bulan) {
+                  const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                  return namaBulan[bulan - 1];
+              }
+
+              function formatTahun(tahun) {
+                  return tahun.toString().padStart(4, '0');
+              }
+
+              function tampilkanWaktu() {
+                  const waktuSekarang = new Date();
+                  const jam = waktuSekarang.getHours();
+                  const menit = waktuSekarang.getMinutes();
+                  const detik = waktuSekarang.getSeconds();
+                  const tanggal = waktuSekarang.getDate();
+                  const bulan = waktuSekarang.getMonth() + 1;
+                  const tahun = waktuSekarang.getFullYear();
+
+                  document.getElementById('jam').innerHTML = formatJam(jam) + ':' + formatMenit(menit) + ':' + formatDetik(detik);
+                  document.getElementById('tanggal').innerHTML = formatTanggal(tanggal) + ' ' + formatBulan(bulan) + ' ' + formatTahun(tahun);
+              }
+
+              setInterval(tampilkanWaktu, 1000);
+          </script>
+          <p id="jam"></p>
+          <p id="tanggal"></p>
+          </div>
+          <div style="text-align:center">
+          <hr>
+        </div>
+        <img src="phs1.jpg" class="phs">
+        <p><b>LOOKISM</b> merupakan komik atau manhwa karya komikus Korea Selatan, Park Tae Jun. Komik Lookism pertama kali rilis di Naver Webtoon pada 2014.<br>
+            Pembaca komik Indonesia, bisa membaca Lookism di aplikasi Line Webtoon. Sejak dirilis, komik ini langsung populer di kalangan pembaca Korea Selatan dan dunia internasional.<br>
+            Lookism begitu populer karena menyajikan cerita yang unik dan seru. Lookism mengisahkan tentang seorang remaja laki-laki bernama Park Hyung Seok yang mengalami bully penampilannya yang dianggap tidak menarik. Bully yang begitu parah membuatnya memutuskan untuk pindah rumah dan sekolah.<br>
+            Tak disangka, keputusan pindah itu ternyata benar-benar mengubah kehidupan Park Hyung Seok. Suatu hari di tempat tinggal barunya, secara tiba-tiba, Park Hyung terbangun dengan tubuh orang lain. Sementara, tubuh lamanya tergeletak tertidur di sampingnya. Tubuh baru Park Hyung Seok tampak sehat dan sempurna, wajahnya juga sangat tampan.<br>
+            Park Hyung Seok akhirnya memulai kehidupan baru dengan tubuhnya. Dengan tubuh barunya, kehidupan Park Hyung Seok benar-benar berubah 180 derajat. Di sekolah barunya, Park Hyung Seok jadi murid populer dan punya banyak sekali teman. Namun di lain sisi, Park Hyung Seok juga harus beradaptasi dengan tubuh baru dan kehidupan baru tersebut.</p>
+        <p>Tetapi, Park Hyung Seok tak selamanya berada di tubuh baru. Sesekali, dia kembali ke tubuhnya sendiri. Dia pun lambat laun mulai menyadari bahwa penampilan fisik tidak menentukan segalanya. Hyung-suk menyadari bahwa keberhasilan dalam hidup didasarkan pada kepribadian dan kemampuan, bukan hanya penampilan.<br>
+            Tubuh baru Park Hyung Seok tak saja membawanya ke kehidupan baru yang bahagia. Selain harus beradaptasi, Park Hyung Seok juga jadi terbawa ke berbagai petualangan seru dan menegangkan. Sebuah kehidupan yang sama sekali tak pernah dia bayangkan sebelumnya. Belum lagi, Park Hyung Seok juga dibayang-bayangi misteri tentang apa yang terjadi di balik tubuh barunya.<br></p>
+    </div>
+    <div id="footer">
+        <p> &copy; Copyright 2023 - Novario Suryaputra (231011700974) </p>
+    </div>
+</div>
+</body>
+</html>

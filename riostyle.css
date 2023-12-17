@@ -1,0 +1,234 @@
+body{
+    background-color: rgb(18, 21, 34);
+}
+#container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    width: 980px;
+    height: 400px;
+    background-image: url(look1.webp);
+    background-color: rgb(0, 0, 0);
+    background-size: 100% 100%;
+}
+
+#navigasi{
+    width: 940px;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    font-style: inherit;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: (white);
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(133, 185, 29);
+    padding: 10px;
+}
+
+a.hover{
+    color:#fff;
+}
+
+#content{
+    width: 950px;
+    height: auto;
+    background-color: #cfae43;
+    padding: 5px 15px 5px 15px;
+}
+
+#content h1{
+    color:rgb(51, 61, 2);
+    text-align: center;
+}
+
+#content h3{
+    color:black
+    margin left;
+
+}
+
+#content .phs{
+    float:left;
+    margin-right: 20px;
+    height: 350px;
+    width: 350px;
+
+}
+
+#content .organisasi{
+    float:left;
+    margin-left: 80px;
+    margin-right: 100px;
+    height: 400px;
+    width: 800px;
+    margin-bottom: 20px;
+
+}
+
+#content .yohan{
+    float:left;
+    margin-right: 20px;
+    height: 250px;
+    width: 250px;
+
+}
+
+#content .yojin{
+    float:left;
+    margin-right: 20px;
+    height: 250px;
+    width: 250px;
+
+}
+
+#content .elijang{
+    float:left;
+    margin-right: 20px;
+    height: 250px;
+    width: 250px;
+
+}
+
+#content .gimyung{
+    float: left;
+    margin-right: 20px;
+    height: 250px;
+    width: 250px;
+
+}
+
+#content p{
+    font-family: Verdana, Times New Roman, Geneva;
+    text-align: justify;
+}
+
+#footer{
+    width: 980px;
+    height: 70px;
+    background-color: #000;
+    padding-top: 30px;
+    margin: auto;
+}
+#footer p{
+    color: #fff;
+    text-align: center;
+}
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 952px;
+}
+
+div .gambar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div img{
+    width: 400px;
+    height: 450px;
+    border: 2px solid #000;
+    border-radius: 13px;
+    box-shadow: #ffffff;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+div img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #6d4402;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: Arial;
+}
+
+input[type=submit] {
+  background-color: #663f00;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e2dd4f;
+}
+
+.column {
+  float: left;
+  width: 300px;
+  margin-top: 6px;
+  padding: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100px;
+        margin-top: 0;
+      }
+  }
+
+#content h2{
+    color:rgb(100, 105, 3);
+    text-align: left;
+    font-size: xx-large;
+}
+
+#content .fat{
+    float:left;
+    margin-right: 20px;
+    height: 350px;
+    width: 310px;
+
+}
+
+#content h4{
+    color:rgb(100, 105, 3);
+    text-align: right;
+    font-size: xx-large;
+}
+
+#content .sb{
+    float:right;
+    margin-right: 20px;
+    height: 350px;
+    width: 310px;
+
+}

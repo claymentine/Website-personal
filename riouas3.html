@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOOKISM</title>
+    <link rel="stylesheet" type="text/css" href="riostyle.css">
+</head>
+<body>
+<div id="container">
+    <div id="header"></div>
+    <div id="navigasi">
+        <nav>
+            <a href="riouas1.html">HOME</a>
+            <a href="riouas2.html">ORGANIZATION</a>
+            <a href="riouas3.html">GALLERY</a>
+            <a href="riouas4.html">CONTACT US</a>
+            <a href="riouas5.html">ABOUT US</a>
+        </nav>
+    </div>
+    <div id="nav"></div>
+        <div id="content">
+            <!--Gallery-->
+            <h1>Gallery Art LOOKISM</h1>
+            <hr>
+            <div>
+                <script>
+                  function formatJam(jam) {
+                      return (jam < 10 ? '0' : '') + jam;
+                  }
+    
+                  function formatMenit(menit) {
+                      return (menit < 10 ? '0' : '') + menit;
+                  }
+    
+                  function formatDetik(detik) {
+                      return (detik < 10 ? '0' : '') + detik;
+                  }
+    
+                  function formatTanggal(tanggal) {
+                      return (tanggal < 10 ? '0' : '') + tanggal;
+                  }
+    
+                  function formatBulan(bulan) {
+                      const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                      return namaBulan[bulan - 1];
+                  }
+    
+                  function formatTahun(tahun) {
+                      return tahun.toString().padStart(4, '0');
+                  }
+    
+                  function tampilkanWaktu() {
+                      const waktuSekarang = new Date();
+                      const jam = waktuSekarang.getHours();
+                      const menit = waktuSekarang.getMinutes();
+                      const detik = waktuSekarang.getSeconds();
+                      const tanggal = waktuSekarang.getDate();
+                      const bulan = waktuSekarang.getMonth() + 1;
+                      const tahun = waktuSekarang.getFullYear();
+    
+                      document.getElementById('jam').innerHTML = formatJam(jam) + ':' + formatMenit(menit) + ':' + formatDetik(detik);
+                      document.getElementById('tanggal').innerHTML = formatTanggal(tanggal) + ' ' + formatBulan(bulan) + ' ' + formatTahun(tahun);
+                  }
+    
+                  setInterval(tampilkanWaktu, 1000);
+              </script>
+              <p id="jam"></p>
+              <p id="tanggal"></p>
+              </div>
+              <div style="text-align:center">
+              <hr>
+            </div>
+            <div class="gambar">
+              <div class="gallery">
+                  <img src="LEJI1.jpg"> 
+              </div>
+              <div class="gallery">
+                  <img src="zack.jpg">
+              </div>
+              <div class="gallery">
+                  <img src="67.jpeg">
+              </div>
+              <div class="gallery">
+                  <img src="seong.jpg">
+              </div>
+              <div class="gallery">
+                  <img src="jang.jpg">
+              </div>
+              <div class="gallery">
+                  <img src="gimyung.jpg">
+              </div>
+              <div class="gallery">
+                  <img src="69.jpeg">
+              </div>
+              <div class="gallery">
+                  <img src="vasco.jpeg">
+              </div>
+            <!--Gallery akhir-->
+          </div>
+        </div>
+    <div id="footer">
+        <p> &copy; Copyright 2023 - Novario Suryaputra (231011700974) </p>
+    </div>
+</div>
+</body>
+</html>
